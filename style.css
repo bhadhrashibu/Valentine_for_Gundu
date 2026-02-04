@@ -1,0 +1,41 @@
+.screen {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.screen.active {
+    display: block;
+    opacity: 1;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+.couple {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.person {
+  width: 200px;
+  animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
